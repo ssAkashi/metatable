@@ -105,7 +105,7 @@ RegisterCommand("actionped2", function(source,args)
 end)
 
 RegisterCommand("destroyped", function(source,args)
-    if ped1 and ped2 ~= nil then
+    if ped1 ~= nil and ped2 ~= nil then
         ped1:delete()
         ped2:delete()
         ped1 = nil
